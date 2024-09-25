@@ -10,8 +10,8 @@ import type { PaymentDetails } from '../shared';
 describe('Money Transfer workflow', () => {
   let testEnv: TestWorkflowEnvironment;
   before(async function () {
-    // this.timeout(_000);
-    testEnv = await TestWorkflowEnvironment.createLocal();
+    this.timeout(5_000);
+    testEnv = await TestWorkflowEnvironment.createTimeSkipping();
   });
 
   after(async () => {

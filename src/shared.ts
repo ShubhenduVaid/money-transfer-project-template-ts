@@ -1,5 +1,5 @@
 // @@@SNIPSTART money-transfer-project-template-ts-constants
-export const namespace = 'default';
+export const namespace: string | undefined = 'default.fmp11';
 export const taskQueueName = 'money-transfer';
 // @@@SNIPEND
 
